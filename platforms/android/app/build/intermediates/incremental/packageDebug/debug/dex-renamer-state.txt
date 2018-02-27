@@ -1,0 +1,4 @@
+#Tue Feb 27 11:21:12 CLST 2018
+base.0=C\:\\Users\\victor.jarpa\\Desktop\\voice\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
