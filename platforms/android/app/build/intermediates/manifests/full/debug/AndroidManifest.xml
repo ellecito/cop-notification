@@ -23,6 +23,7 @@
 
     <uses-feature android:name="android.hardware.location.gps" />
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -44,17 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name="cordova.plugins.Diagnostic$LocationProviderChangedReceiver" >
-            <intent-filter>
-                <action android:name="android.location.PROVIDERS_CHANGED" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name="cordova.plugins.Diagnostic$NFCStateChangedReceiver" >
-            <intent-filter>
-                <action android:name="android.nfc.action.ADAPTER_STATE_CHANGED" />
-            </intent-filter>
-        </receiver>
 
         <meta-data
             android:name="android.support.VERSION"

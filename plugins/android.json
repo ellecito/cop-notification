@@ -13,13 +13,13 @@
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "cl.pitz.voice"
     },
-    "cordova-plugin-speechrecognition": {
-      "PACKAGE_NAME": "cl.pitz.voice"
-    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "cl.pitz.voice"
     },
     "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "cl.pitz.voice"
+    },
+    "cordova-plugin-speechrecognition": {
       "PACKAGE_NAME": "cl.pitz.voice"
     }
   },

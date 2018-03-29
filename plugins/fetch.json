@@ -15,10 +15,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-speechrecognition": {
+  "cordova-plugin-dialogs": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-speechrecognition"
+      "id": "cordova-plugin-dialogs"
     },
     "is_top_level": true,
     "variables": {}
@@ -26,15 +26,15 @@
   "cordova.plugins.diagnostic": {
     "source": {
       "type": "registry",
-      "id": "cordova.plugins.diagnostic@^3.9.2"
+      "id": "cordova.plugins.diagnostic@4.0.3"
     },
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-dialogs": {
+  "cordova-plugin-speechrecognition": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-dialogs"
+      "id": "cordova-plugin-speechrecognition"
     },
     "is_top_level": true,
     "variables": {}

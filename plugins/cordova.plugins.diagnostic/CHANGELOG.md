@@ -1,4 +1,21 @@
 # CHANGELOG
+
+**v4.0.3**
+* Remove literal angle brackets in comment attributes as they cause XML parse issue in Visual Studio. Fixes [#284](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/284).
+
+**v4.0.2**
+* Add `<uses-permission>` manifest entry for Bluetooth since registering broadcast receiver is now done at runtime. Fixes [#282](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/282)/[#283](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/283).
+
+**v4.0.1**
+* Register explicit broadcast receivers for location/Bluetooth/NFC state change listeners at run-time, due to [removal of support for implicit broadcast receivers in Android 8.0 (API 26)](https://developer.android.com/about/versions/oreo/background.html#broadcasts).
+Fixes [#279](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/279).
+
+**v4.0.0**
+* Major rework of plugin code (both native and JS) into separate modules.
+    * Adds mechanism for including optional modules via config preference.
+    * Resolves [#181](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/181).
+* Removed deprecated iOS method `requestAndCheckMotionAuthorization()`
+
 **v3.9.2**
 * Run iOS plugin initialisation on-load (rather than on-demand) to avoid race conditions when querying async native managers such as Bluetooth. Fixes [#271](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/271).
 * Run all iOS native plugin commands on a background thread (other than those which call methods on `[UIApplication sharedApplication]` so must explicitly run on the main thread) to prevent THREAD WARNING messages in the console.

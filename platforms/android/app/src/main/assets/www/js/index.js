@@ -64,7 +64,7 @@ var app = {
                     }
                 })
 
-                if (alert.orientation != null) {
+                if (alert.orientation != null && alert.distance > 0) {
                     var here = new google.maps.LatLng(window.localStorage.getItem("latitud"), window.localStorage.getItem("longitud"))
                     var there = google.maps.geometry.spherical.computeOffset(here, alert.distance, alert.orientation)
                     var marker = new google.maps.Marker({
@@ -83,10 +83,6 @@ var app = {
                         google_maps.InfoWindow.open(google_maps.map, marker)
                     })
                 }
-
-                // var p = document.createElement('p')
-                // p.innerHTML = txt
-                // document.getElementById('input').appendChild(p)
             })
         }, error => {
             console.error(error)

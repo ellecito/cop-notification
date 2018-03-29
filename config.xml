@@ -24,8 +24,8 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
-    <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />
-    <plugin name="cordova.plugins.diagnostic" spec="^3.9.2" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+    <plugin name="cordova.plugins.diagnostic" spec="^4.0.3" />
+    <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />
     <engine name="android" spec="^7.1.0" />
 </widget>
