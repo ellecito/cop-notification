@@ -1,5 +1,24 @@
 # CHANGELOG
 
+**v4.0.8**
+* iOS build fix: Make static the definition of the diagnostic variable which references the Diagnostic singleton instance to prevent it leaking to global scope and causing duplicate symbol build errors. Fixes [#308](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/308).
+* Fix typo which references wrong namespace. See [#306](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/306).
+
+**v4.0.7**
+Use native SharedPreferences to track request permissions (instead of HTML5 Local Storage) in order to avoid issues with Android Autobackup. Fixes [#304](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/304).
+
+**v4.0.6**
+* Remove obselete `windows-target-version` preference which is causing Window platform build failure. Fixes [#295](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/295).
+* Add missing call to getMotionAuthorizationStatus() in iOS motion module.
+
+**v4.0.5**
+* Bug fix: ensure complete camera module inclusion and default Info.plist strings on iOS. 
+Merges [#292](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/292). 
+
+**v4.0.4**
+* Ensure all Android code entry points are handled in try/catch blocks to prevent app crashes by unhandled exceptions.
+* Enable the `types` parameter for `requestRemoteNotificationsAuthorization` to be omitted (rather than requiring empty object). Fixes [#286](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/286).
+
 **v4.0.3**
 * Remove literal angle brackets in comment attributes as they cause XML parse issue in Visual Studio. Fixes [#284](https://github.com/dpa99c/cordova-diagnostic-plugin/issues/284).
 
